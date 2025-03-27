@@ -7,9 +7,9 @@
 </head>
 <body>
     <form action = "01.html" method="get">
-        성명 : <input type = "text" name = "username" value = "이름 입력">
+        <label for = "username">성명 : </label> <input type = "text" name = "username" id = "username" value = "이름 입력"> <!--라벨로 즉시 이동 가능하게 함-->
         <br>
-        비밀번호 :<input type = "password" name = "pwd">
+        <label for = "pwd">비밀번호 :</label> <input type = "password" name = "pwd" id = "pwd">
         <br>
         첨부파일 : <input type = "file" name = "file">
         <br>
@@ -19,7 +19,7 @@
         <br>
         <input type = "hidden" name = "code" value = "polly111">
         <br>
-        <input type = "button" value = "주의사항" onclik = "alert('이름은 한글로 입력하세요. 비밀번호는 3자리 이상 영문혼합으로 작성하세요.')"> <!--""안에는 ""사용 불가가--> 
+        <input type ="button" value ="주의사항" onclick ="alert('이름은 한글로 입력하세요!, 비밀번호는 3자리 이상 영문혼합으로 작성하세요!')"> <!--""안에는 ""사용 불가가--> 
         <br>
         <input type = "reset" value = "취소">
         <br>
